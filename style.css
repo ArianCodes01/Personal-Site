@@ -546,8 +546,9 @@ a {
     align-items: center;
     transition: 0.1s all;
 }
-.projects-top-part a:hover{
-    color: rgb(147,197,253)
+
+.projects-top-part a:hover {
+    color: rgb(147, 197, 253)
 }
 
 .projects-div {
@@ -629,4 +630,76 @@ a {
     background-color: rgb(24, 24, 27);
     border-radius: 1.5rem;
     color: white;
+}
+
+/*  BLOG SECTION  */
+
+.blog {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: rgb(9, 9, 11);
+}
+
+.blog-boxes {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog-box {
+    padding: 2rem;
+    background-color: rgb(24, 24, 27);
+    border: 1px solid rgb(39, 39, 42);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    width: 381px;
+    height: 311px;
+}
+
+.blog-box:hover {
+    border-color: rgb(59, 130, 246);
+}
+
+.blog-box .blog-date {
+    color: rgb(96, 165, 250);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.blog-box .blog-title {
+    line-height: 1.25;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.blog-box .blog-desc {
+    color: rgb(161, 161, 170);
+    overflow: hidden;
+}
+
+.blog-box .read-article {
+    color: rgb(96, 165, 250);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    margin-top: 2rem;
+    display: flex;
+    column-gap: 0.5rem;
+    align-items: center;
+    transition: all 0.1s;
+}
+
+.blog-box .read-article:hover {
+    color: rgb(147, 197, 253);
+    cursor: pointer;
+}
+
+.blog-box .read-article i {
+    font-size: 0.8rem;
+    margin-top: 4px;
 }
