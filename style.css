@@ -703,3 +703,152 @@ a {
     font-size: 0.8rem;
     margin-top: 4px;
 }
+
+/*  CONVERSATION SECTION  */
+
+.conversation {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: rgb(24, 24, 27);
+}
+
+.top-part .top-desc {
+    color: rgb(161, 161, 170);
+    max-width: 28rem;
+    margin: 1rem auto 0 auto;
+}
+
+.left-right {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.left .input-label {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    color: rgb(161, 161, 170);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.input,
+textarea {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    background-color: rgb(9, 9, 11);
+    border: 1px solid rgb(63, 63, 70);
+    border-radius: 1rem;
+    width: 232px;
+    height: 58px;
+    color: white;
+    font-size: 0.97rem;
+    transition: all 0.1s ease;
+}
+
+.input:focus {
+    border-color: rgb(59, 130, 246);
+}
+
+#message-textarea {
+    width: 489px;
+    height: 186px;
+}
+
+.name-email {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.send-message-btn {
+    margin-top: calc(2rem * calc(1 - 0));
+    margin-bottom: calc(2rem * 0);
+    color: black;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: white;
+    border-radius: 1.5rem;
+    width: 489px;
+    height: 76px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.send-message-btn:hover{
+    background-color: rgb(244,244,245);
+    transform: translateY(-5px);
+}
+
+.right {
+    margin-top: 40px;
+}
+
+.right .email p {
+    color: rgb(113, 113, 122);
+    letter-spacing: 0.1em;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.right .email a {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: white;
+    transition: all 0.2s ease;
+}
+.right .email a:hover{
+    color: rgb(96,165,250);
+}
+
+.base-in-p {
+    color: rgb(113, 113, 122);
+    letter-spacing: 0.1em;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 30px;
+}
+
+.state {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: white;
+}
+
+.find-me-on {
+    margin-top: 70px;
+}
+
+.find-me-on p {
+    color: rgb(113, 113, 122);
+    letter-spacing: 0.1em;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.find-me-on i {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    font-weight: 400;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.find-me-on i:hover{
+    color: rgb(96,165,250);
+}
+.find-me-on .icons{
+    display: flex;
+    gap: 15px;
+}
