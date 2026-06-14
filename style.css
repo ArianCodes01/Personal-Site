@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Inter', system-ui, sans-serif;
 }
@@ -319,6 +323,7 @@ a {
     height: 519px;
     border-radius: 1.5rem;
     box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    object-fit: cover;
 }
 
 .chapter {
@@ -783,8 +788,9 @@ textarea {
     cursor: pointer;
     transition: all 0.2s ease;
 }
-.send-message-btn:hover{
-    background-color: rgb(244,244,245);
+
+.send-message-btn:hover {
+    background-color: rgb(244, 244, 245);
     transform: translateY(-5px);
 }
 
@@ -806,8 +812,9 @@ textarea {
     color: white;
     transition: all 0.2s ease;
 }
-.right .email a:hover{
-    color: rgb(96,165,250);
+
+.right .email a:hover {
+    color: rgb(96, 165, 250);
 }
 
 .base-in-p {
@@ -845,24 +852,50 @@ textarea {
     cursor: pointer;
     transition: all 0.2s ease;
 }
-.find-me-on i:hover{
-    color: rgb(96,165,250);
+
+.find-me-on i:hover {
+    color: rgb(96, 165, 250);
 }
-.find-me-on .icons{
+
+.find-me-on .icons {
     display: flex;
     gap: 15px;
 }
 
 /*  FOOTER  */
 
-footer{
+footer {
     padding-top: 3rem;
     padding-bottom: 3rem;
     background-color: black;
     text-align: center;
 }
-footer p{
+
+footer p {
     font-size: 0.875rem;
     line-height: 1.25rem;
     color: rgb(113, 113, 122);
+}
+
+.scroll-to-top {
+    opacity: 0;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    background-color: #070a13;
+    color: rgb(96, 165, 250);
+    padding: 13px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.scroll-to-top.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.scroll-to-top i {
+    font-size: 15px;
 }
