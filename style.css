@@ -852,3 +852,17 @@ textarea {
     display: flex;
     gap: 15px;
 }
+
+/*  FOOTER  */
+
+footer{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: black;
+    text-align: center;
+}
+footer p{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: rgb(113, 113, 122);
+}
