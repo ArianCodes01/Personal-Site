@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
   <title>Arian's Site</title>
 </head>
@@ -36,14 +37,36 @@
           <a href="https://instagram.com/arian_kids_code" target="_blank"><i class="fa-brands fa-instagram"></i></a>
           <a href="https://github.com/ArianCodes01" target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
+        <i class="fa-solid fa-bars bars-icon" id="barsIcon"></i>
       </nav>
     </div>
   </header>
 
+  <aside class="sidebar">
+    <button class="close-btn" id="closeBtn">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <nav>
+      <a href="#header"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="#aboutMe"><i class="fa-solid fa-user"></i> About</a>
+      <a href="#skillsAndTechnologies"><i class="fa-solid fa-bolt"></i> Skills</a>
+      <a href="#projects"><i class="fa-solid fa-briefcase"></i> Work</a>
+      <a href="#blog"><i class="fa-solid fa-blog"></i> Blog</a>
+      <a href="#conversation"><i class="fa-solid fa-envelope"></i> Contact</a>
+    </nav>
+
+    <div class="socials">
+      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-github"></i></a>
+    </div>
+  </aside>
+
   <section class="hero" id="hero">
     <div class="container">
-      <div class="hero-left-right">
-        <div class="hero-left">
+      <div class="row">
+        <div class="col-xs-12 col-md-6 hero-left">
           <div class="hero-freelance">
             <div class="freelance-pulse"></div>
             <p>Available for freelance</p>
@@ -72,15 +95,17 @@
             </div>
           </div>
         </div>
-        <div class="hero-right">
-          <img src="./images/girl-image.jpg" alt="arian-image">
-          <div class="floating-div">
-            <div class="icon">
-              <i class="fa-solid fa-check-circle"></i>
-            </div>
-            <div class="content">
-              <p class="bold-p">Currently building</p>
-              <p class="normal-p">AI-powered SaaS platform</p>
+        <div class="col-xs-12 col-md-6 hero-right">
+          <div class="image-wrapper">
+            <img src="./images/girl-image.jpg" alt="arian-image" class="hero-girl-image">
+            <div class="floating-div">
+              <div class="icon">
+                <i class="fa-solid fa-check-circle"></i>
+              </div>
+              <div class="content">
+                <p class="bold-p">Currently building</p>
+                <p class="normal-p">AI-powered SaaS platform</p>
+              </div>
             </div>
           </div>
         </div>
@@ -95,11 +120,11 @@
 
   <section class="aboutMe" id="aboutMe">
     <div class="container">
-      <div class="aboutMe-left-right">
-        <div class="aboutMe-left">
-          <img src="./images/girl-image.jpg" alt="arian image">
+      <div class="aboutMe-left-right row">
+        <div class="aboutMe-left col-xs-12 col-lg-4">
+          <img src="./images/girl-image.jpg" alt="arian image" class="about-girl-image">
         </div>
-        <div class="aboutMe-right">
+        <div class="aboutMe-right col-xs-12 col-lg-8">
           <span class="chapter">CHAPTER 01 — THE STORY</span>
           <h2 class="heading">About Me</h2>
 
@@ -151,8 +176,8 @@
         <h2 class="heading">Skills & Technologies</h2>
       </div>
 
-      <div class="SAT-left-right">
-        <div class="left">
+      <div class="SAT-left-right row">
+        <div class="left col-xs-12 col-lg-6">
           <span class="top-name">Technical Stack</span>
 
           <div class="SAT-stats">
@@ -204,7 +229,7 @@
           </div>
         </div>
 
-        <div class="right">
+        <div class="right col-xs-12 col-lg-6">
           <span class="top-name right-top-name">What I Bring</span>
 
           <div class="right-grid">
@@ -247,61 +272,70 @@
       <span class="chapter">CHAPTER 03 — SELECTED WORK</span>
       <div class="top-part projects-top-part">
         <h2 class="heading">Featured Projects</h2>
-        <a href="#">View all projects <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#" class="view-all-projects">View all projects <i class="fa-solid fa-arrow-right"></i></a>
       </div>
 
-      <div class="projects-div">
-        <div class="project-item">
-          <div class="top-image">
-            <img src="./images/modern-pic.jpg" alt="modern-image">
-            <div class="tag">SaaS</div>
-          </div>
-          <div class="bottom-content">
-            <h3 class="project-name">Nova Dashboard</h3>
-            <p class="desc">Modern analytics platform with real-time data visualization and AI insights.</p>
+      <div class="row projects-row">
 
-            <div class="project-tech">
-              <div class="tech-item">HTML</div>
-              <div class="tech-item">CSS</div>
-              <div class="tech-item">JavaScript</div>
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <div class="project-item">
+            <div class="top-image">
+              <img src="./images/modern-pic.jpg" alt="modern-image">
+              <div class="tag">SaaS</div>
+            </div>
+            <div class="bottom-content">
+              <h3 class="project-name">Nova Dashboard</h3>
+              <p class="desc">Modern analytics platform with real-time data visualization and AI insights.</p>
+
+              <div class="project-tech">
+                <div class="tech-item">HTML</div>
+                <div class="tech-item">CSS</div>
+                <div class="tech-item">JavaScript</div>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="project-item">
-          <div class="top-image">
-            <img src="./images/dog-image.jpg" alt="dog-image">
-            <div class="tag">E-commerce</div>
-          </div>
-          <div class="bottom-content">
-            <h3 class="project-name">Lumina Store</h3>
-            <p class="desc">High-converting fashion e-commerce platform with seamless checkout experience.</p>
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <div class="project-item">
+            <div class="top-image">
+              <img src="./images/dog-image.jpg" alt="dog-image">
+              <div class="tag">E-commerce</div>
+            </div>
+            <div class="bottom-content">
+              <h3 class="project-name">Lumina Store</h3>
+              <p class="desc">High-converting fashion e-commerce platform with seamless checkout experience.</p>
 
-            <div class="project-tech">
-              <div class="tech-item">HTML</div>
-              <div class="tech-item">CSS</div>
-              <div class="tech-item">Tailwind</div>
+              <div class="project-tech">
+                <div class="tech-item">HTML</div>
+                <div class="tech-item">CSS</div>
+                <div class="tech-item">Tailwind</div>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="project-item">
-          <div class="top-image">
-            <img src="./images/work-image.jpg" alt="work-image">
-            <div class="tag">Productivity</div>
-          </div>
-          <div class="bottom-content">
-            <h3 class="project-name">Flowstate</h3>
-            <p class="desc">Minimalist task management app with focus mode and beautiful animations.</p>
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <div class="project-item">
+            <div class="top-image">
+              <img src="./images/work-image.jpg" alt="work-image">
+              <div class="tag">Productivity</div>
+            </div>
+            <div class="bottom-content">
+              <h3 class="project-name">Flowstate</h3>
+              <p class="desc">Minimalist task management app with focus mode and beautiful animations.</p>
 
-            <div class="project-tech">
-              <div class="tech-item">HTML</div>
-              <div class="tech-item">CSS</div>
-              <div class="tech-item">Tailwind</div>
+              <div class="project-tech">
+                <div class="tech-item">HTML</div>
+                <div class="tech-item">CSS</div>
+                <div class="tech-item">Tailwind</div>
+              </div>
             </div>
           </div>
         </div>
+
       </div>
+
     </div>
   </section>
 
@@ -312,43 +346,53 @@
         <h2 class="heading">Latest from the Blog</h2>
       </div>
 
-      <div class="blog-boxes">
-        <div class="blog-box">
-          <p class="blog-date">JUNE 2, 2026</p>
-          <h3 class="blog-title">Building a Design System from Scratch in 2026</h3>
-          <p class="blog-desc">Lessons learned while creating a scalable component library used by 12 product teams.</p>
+      <div class="row">
 
-          <a href="#">
-            <span class="read-article">
-              Read article <i class="fa-solid fa-arrow-right"></i>
-            </span>
-          </a>
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <div class="blog-box">
+            <p class="blog-date">JUNE 2, 2026</p>
+            <h3 class="blog-title">Building a Design System from Scratch in 2026</h3>
+            <p class="blog-desc">Lessons learned while creating a scalable component library used by 12 product teams.
+            </p>
+
+            <a href="#">
+              <span class="read-article">
+                Read article <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </a>
+          </div>
         </div>
 
-        <div class="blog-box">
-          <p class="blog-date">MAY 18, 2026</p>
-          <h3 class="blog-title">The State of Web Performance in 2026</h3>
-          <p class="blog-desc">An analysis of real-world Core Web Vitals data across 500+ production websites.</p>
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <div class="blog-box">
+            <p class="blog-date">MAY 18, 2026</p>
+            <h3 class="blog-title">The State of Web Performance in 2026</h3>
+            <p class="blog-desc">An analysis of real-world Core Web Vitals data across 500+ production websites.</p>
 
-          <a href="#">
-            <span class="read-article">
-              Read article <i class="fa-solid fa-arrow-right"></i>
-            </span>
-          </a>
+            <a href="#">
+              <span class="read-article">
+                Read article <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </a>
+          </div>
         </div>
 
-        <div class="blog-box">
-          <p class="blog-date">APR 29, 2026</p>
-          <h3 class="blog-title">Why I Switched to Cursor.sh</h3>
-          <p class="blog-desc">My experience moving from traditional IDEs to AI-powered development environments.</p>
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <div class="blog-box">
+            <p class="blog-date">APR 29, 2026</p>
+            <h3 class="blog-title">Why I Switched to Cursor.sh</h3>
+            <p class="blog-desc">My experience moving from traditional IDEs to AI-powered development environments.</p>
 
-          <a href="#">
-            <span class="read-article">
-              Read article <i class="fa-solid fa-arrow-right"></i>
-            </span>
-          </a>
+            <a href="#">
+              <span class="read-article">
+                Read article <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </a>
+          </div>
         </div>
+
       </div>
+
 
     </div>
   </section>
@@ -361,47 +405,53 @@
         <p class="top-desc">I'm always interested in new opportunities and collaborations.</p>
       </div>
 
-      <div class="left-right">
-        <div class="left">
-          <div class="name-email">
-            <div class="name input-label">
-              <label for="name-input" class="label">Name</label>
-              <input type="text" id="name-input" class="input">
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <div class="left">
+            <div class="name-email">
+              <div class="name input-label">
+                <label for="name-input" class="label">Name</label>
+                <input type="text" id="name-input" class="input">
+              </div>
+
+              <div class="email input-label">
+                <label for="email-input" class="label">Email</label>
+                <input type="email" id="email-input" class="input">
+              </div>
             </div>
 
-            <div class="email input-label">
-              <label for="email-input" class="label">Email</label>
-              <input type="email" id="email-input" class="input">
+            <div class="message textarea">
+              <label for="message-textarea" class="label">Message</label>
+              <textarea id="message-textarea" class="input"></textarea>
             </div>
-          </div>
 
-          <div class="message input-label">
-            <label for="message-textarea" class="label">Message</label>
-            <textarea id="message-textarea" class="input"></textarea>
+            <button class="send-message-btn">Send Message</button>
           </div>
-
-          <button class="send-message-btn">Send Message</button>
         </div>
 
-        <div class="right">
-          <div class="email">
-            <p>EMAIL</p>
-            <a href="#">ariyanmortazavi56@gmail.com</a>
-          </div>
-          <div class="base-in">
-            <p class="base-in-p">BASED IN</p>
-            <p class="state">Washington, United States</p>
-          </div>
-          <div class="find-me-on">
-            <p>FIND ME ON</p>
-            <div class="icons">
-              <a href="https://www.youtube.com/@arian_kids_code" target="_blank"><i
-                  class="fa-brands fa-youtube"></i></a>
-              <a href="https://instagram.com/arian_kids_code" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-              <a href="https://github.com/ArianCodes01" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <div class="col-xs-12 col-md-6">
+          <div class="right">
+            <div class="email">
+              <p>EMAIL</p>
+              <a href="#">ariyanmortazavi56@gmail.com</a>
+            </div>
+            <div class="base-in">
+              <p class="base-in-p">BASED IN</p>
+              <p class="state">Washington, United States</p>
+            </div>
+            <div class="find-me-on">
+              <p>FIND ME ON</p>
+              <div class="icons">
+                <a href="https://www.youtube.com/@arian_kids_code" target="_blank"><i
+                    class="fa-brands fa-youtube"></i></a>
+                <a href="https://instagram.com/arian_kids_code" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/ArianCodes01" target="_blank"><i class="fa-brands fa-github"></i></a>
+              </div>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -416,15 +466,15 @@
     <a href="#header"><i class="fa-solid fa-arrow-up"></i></a>
   </div>
 
-  <script>
+  <script src="app.js">
 
     let scrollTopBtn = document.getElementById('scrollTopBtn')
 
-    window.addEventListener('scroll', function(){
-      if(window.scrollY > 1050){
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 1050) {
         scrollTopBtn.classList.add('visible')
       }
-      if(window.scrollY < 1050){
+      if (window.scrollY < 1050) {
         scrollTopBtn.classList.remove('visible')
       }
     })
