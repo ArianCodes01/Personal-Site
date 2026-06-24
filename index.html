@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="responsive.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>Arian's Site</title>
 </head>
 
@@ -66,7 +67,7 @@
   <section class="hero" id="hero">
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-md-6 hero-left">
+        <div class="col-xs-12 col-md-6 hero-left"  data-aos="fade-right" data-aos-duration="700">
           <div class="hero-freelance">
             <div class="freelance-pulse"></div>
             <p>Available for freelance</p>
@@ -95,7 +96,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xs-12 col-md-6 hero-right">
+        <div class="col-xs-12 col-md-6 hero-right" data-aos="fade-left"  data-aos-duration="700">
           <div class="image-wrapper">
             <img src="./images/girl-image.jpg" alt="arian-image" class="hero-girl-image">
             <div class="floating-div">
@@ -121,12 +122,13 @@
   <section class="aboutMe" id="aboutMe">
     <div class="container">
       <div class="aboutMe-left-right row">
-        <div class="aboutMe-left col-xs-12 col-lg-4">
+        <div class="aboutMe-left col-xs-12 col-lg-4" data-aos="fade-right"  data-aos-duration="700">
           <img src="./images/girl-image.jpg" alt="arian image" class="about-girl-image">
         </div>
-        <div class="aboutMe-right col-xs-12 col-lg-8">
+        <div class="aboutMe-right col-xs-12 col-lg-8" data-aos="fade-left"  data-aos-duration="700">
+          <div data-aos="fade-down">
           <span class="chapter">CHAPTER 01 — THE STORY</span>
-          <h2 class="heading">About Me</h2>
+          <h2 class="heading">About Me</h2></div>
 
           <p class="aboutMe-desc">I'm a passionate web developer with over 2 years of experience creating digital
             products that people love to use. My journey started with a simple "Hello World" and evolved into building
@@ -171,16 +173,18 @@
 
   <section class="skillsAndTechnologies" id="skillsAndTechnologies">
     <div class="container">
-      <div class="top-part">
+      <div class="top-part" data-aos="fade-down"  data-aos-duration="700">
         <span class="chapter">CHAPTER 02 — EXPERTISE</span>
         <h2 class="heading">Skills & Technologies</h2>
       </div>
 
       <div class="SAT-left-right row">
         <div class="left col-xs-12 col-lg-6">
+          <div data-aos="fade-right"  data-aos-duration="700">
           <span class="top-name">Technical Stack</span>
+          </div>
 
-          <div class="SAT-stats">
+          <div class="SAT-stats" data-aos="fade-right" data-aos-duration="700">
 
             <div class="SAT-stat-item">
               <div class="SAT-stat-item-text">
@@ -229,7 +233,7 @@
           </div>
         </div>
 
-        <div class="right col-xs-12 col-lg-6">
+        <div class="right col-xs-12 col-lg-6" data-aos="fade-left">
           <span class="top-name right-top-name">What I Bring</span>
 
           <div class="right-grid">
@@ -269,13 +273,15 @@
 
   <section class="projects" id="projects">
     <div class="container">
+      <div data-aos="fade-down" data-aos-duration="700">
       <span class="chapter">CHAPTER 03 — SELECTED WORK</span>
-      <div class="top-part projects-top-part">
+      </div>
+      <div class="top-part projects-top-part" data-aos="fade-down" data-aos-duration="700">
         <h2 class="heading">Featured Projects</h2>
         <a href="#" class="view-all-projects">View all projects <i class="fa-solid fa-arrow-right"></i></a>
       </div>
 
-      <div class="row projects-row">
+      <div class="row projects-row" data-aos="fade-up" data-aos-duration="700">
 
         <div class="col-xs-12 col-md-6 col-lg-4">
           <div class="project-item">
@@ -341,12 +347,12 @@
 
   <section class="blog" id="blog">
     <div class="container">
-      <div class="top-part">
+      <div class="top-part" data-aos="fade-down" data-aos-duration="700">
         <span class="chapter">CHAPTER 04 — THOUGHTS</span>
         <h2 class="heading">Latest from the Blog</h2>
       </div>
 
-      <div class="row">
+      <div class="row" data-aos="fade-up" data-aos-duration="700">
 
         <div class="col-xs-12 col-md-6 col-lg-4">
           <div class="blog-box">
@@ -399,15 +405,15 @@
 
   <section class="conversation" id="conversation">
     <div class="container">
-      <div class="top-part">
+      <div class="top-part" data-aos="fade-down" data-aos-duration="700">
         <span class="chapter">CHAPTER 05 — LET'S CONNECT</span>
         <h2 class="heading">Start a Conversation</h2>
         <p class="top-desc">I'm always interested in new opportunities and collaborations.</p>
       </div>
 
-      <div class="row">
+      <div class="row conversation-row">
         <div class="col-xs-12 col-md-6">
-          <div class="left">
+          <div class="left" data-aos="fade-right" data-aos-duration="700">
             <div class="name-email">
               <div class="name input-label">
                 <label for="name-input" class="label">Name</label>
@@ -430,7 +436,7 @@
         </div>
 
         <div class="col-xs-12 col-md-6">
-          <div class="right">
+          <div class="right" data-aos="fade-left" data-aos-duration="700">
             <div class="email">
               <p>EMAIL</p>
               <a href="#">ariyanmortazavi56@gmail.com</a>
@@ -462,11 +468,11 @@
     </div>
   </footer>
 
-  <div class="scroll-to-top" id="scrollTopBtn">
+  <!-- <div class="scroll-to-top" id="scrollTopBtn">
     <a href="#header"><i class="fa-solid fa-arrow-up"></i></a>
   </div>
 
-  <script src="app.js">
+  <script src="app.js"> 
 
     let scrollTopBtn = document.getElementById('scrollTopBtn')
 
@@ -480,7 +486,11 @@
     })
 
 
-  </script>
+  </script> -->
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>AOS.init();</script>
 </body>
 
 </html>

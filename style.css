@@ -237,7 +237,8 @@ a {
   line-height: 1.25rem;
   font-weight: 500;
 }
-.image-wrapper{
+
+.image-wrapper {
   position: relative;
 }
 
@@ -752,13 +753,17 @@ a {
   margin: 1rem auto 0 auto;
 }
 
-.left .input-label {
+.conversation .right {
+  padding-left: 40px;
+}
+
+.conversation .left .input-label {
   display: flex;
   flex-direction: column;
   width: 48%;
 }
 
-.label {
+.conversation .label {
   color: rgb(161, 161, 170);
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -779,7 +784,7 @@ textarea {
   transition: all 0.1s ease;
 }
 
-.textarea textarea{
+.textarea textarea {
   width: 100%;
 }
 
@@ -902,8 +907,8 @@ footer p {
   color: rgb(113, 113, 122);
 }
 
-.scroll-to-top {
-  opacity: 0;
+/*.scroll-to-top {
+  opacity: 1;
   position: fixed;
   right: 15px;
   bottom: 15px;
@@ -912,9 +917,7 @@ footer p {
   padding: 13px;
   border-radius: 50%;
   cursor: pointer;
-  transition:
-    opacity 0.3s,
-    transform 0.3s;
+  transition: all 0.3s;
 }
 
 .scroll-to-top.visible {
@@ -925,7 +928,7 @@ footer p {
 
 .scroll-to-top i {
   font-size: 15px;
-}
+}*/
 
 .hidden,
 #hidden {
@@ -1039,9 +1042,11 @@ footer p {
   background: #3b82f6;
   transform: translateY(-5px);
 }
-.projects-row{
+
+.projects-row {
   margin: 0 auto;
 }
+
 @media screen and (max-width: 920px) {
 
   header .menu,
@@ -1054,19 +1059,21 @@ footer p {
   }
 }
 
-@media screen and (max-width: 516px){
-  .hero-name{
+@media screen and (max-width: 516px) {
+  .hero-name {
     font-size: 4.1rem;
   }
 }
-@media screen and (max-width: 683px){
-  .projects-top-part{
+
+@media screen and (max-width: 683px) {
+  .projects-top-part {
     flex-direction: column;
     row-gap: 22px;
   }
 }
-@media screen and (max-width: 1245px){
-  .floating-div{
+
+@media screen and (max-width: 1245px) {
+  .floating-div {
     right: -.6rem;
   }
 }
