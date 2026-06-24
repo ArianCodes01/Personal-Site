@@ -9,3 +9,23 @@ barsIcon.onclick = function () {
 closeBtn.onclick = function () {
     sidebar.style.right = '-280px'
 }
+
+
+const app = document.getElementById("typewriter");
+
+const typewriter = new Typewriter(app, {
+    loop: true,
+    delay: 150,
+    deletedSpeed: 120
+});
+
+typewriter
+    .typeString("Web Developer")
+    .pauseFor(2000)
+    .deleteAll()
+    .typeString("Front-End Developer")
+    .pauseFor(2000)
+    .deleteAll()
+    .typeString("UI/UX Designer")
+    .pauseFor(2000)
+    .start();
