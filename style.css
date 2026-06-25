@@ -907,28 +907,30 @@ footer p {
   color: rgb(113, 113, 122);
 }
 
-/*.scroll-to-top {
-  opacity: 1;
+#scrollTopBtn {
   position: fixed;
-  right: 15px;
-  bottom: 15px;
-  background-color: #070a13;
-  color: rgb(96, 165, 250);
-  padding: 13px;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  border: 1px solid #3b82f6;
   border-radius: 50%;
+  background: #111827;
+  color: white;
+  font-size: 16px;
   cursor: pointer;
-  transition: all 0.3s;
+  display: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  z-index: 1000;
 }
 
-.scroll-to-top.visible {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
+#scrollTopBtn:hover {
+  background: #2563eb;
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px rgba(37, 99, 235, 0.5);
 }
-
-.scroll-to-top i {
-  font-size: 15px;
-}*/
 
 .hidden,
 #hidden {
@@ -1077,9 +1079,10 @@ footer p {
     right: -.6rem;
   }
 }
-@media screen and (max-width: 1230px){
-    header{
-      padding-left: 15px;
-      padding-right: 15px;
-    }
+
+@media screen and (max-width: 1230px) {
+  header {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }

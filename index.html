@@ -67,13 +67,14 @@
   <section class="hero" id="hero">
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-md-6 hero-left"  data-aos="fade-right" data-aos-duration="700">
+        <div class="col-xs-12 col-md-6 hero-left" data-aos="fade-right" data-aos-duration="700">
           <div class="hero-freelance">
             <div class="freelance-pulse"></div>
             <p>Available for freelance</p>
           </div>
           <h1 class="hero-name">Hi, I'm <span class="blue-text">Arian M</span> <br>
-            <span id="typewriter">Web Developer</span></h1>
+            <span id="typewriter">Web Developer</span>
+          </h1>
           <p class="hero-desc">I craft exceptional digital experiences through clean code and thoughtful
             design.
             Specialized in modern web technologies and user-centered interfaces.</p>
@@ -96,7 +97,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xs-12 col-md-6 hero-right" data-aos="fade-left"  data-aos-duration="700">
+        <div class="col-xs-12 col-md-6 hero-right" data-aos="fade-left" data-aos-duration="700">
           <div class="image-wrapper">
             <img src="./images/girl-image.jpg" alt="arian-image" class="hero-girl-image">
             <div class="floating-div">
@@ -122,13 +123,14 @@
   <section class="aboutMe" id="aboutMe">
     <div class="container">
       <div class="aboutMe-left-right row">
-        <div class="aboutMe-left col-xs-12 col-lg-4" data-aos="fade-right"  data-aos-duration="700">
+        <div class="aboutMe-left col-xs-12 col-lg-4" data-aos="fade-right" data-aos-duration="700">
           <img src="./images/girl-image.jpg" alt="arian image" class="about-girl-image">
         </div>
-        <div class="aboutMe-right col-xs-12 col-lg-8" data-aos="fade-left"  data-aos-duration="700">
+        <div class="aboutMe-right col-xs-12 col-lg-8" data-aos="fade-left" data-aos-duration="700">
           <div data-aos="fade-down">
-          <span class="chapter">CHAPTER 01 — THE STORY</span>
-          <h2 class="heading">About Me</h2></div>
+            <span class="chapter">CHAPTER 01 — THE STORY</span>
+            <h2 class="heading">About Me</h2>
+          </div>
 
           <p class="aboutMe-desc">I'm a passionate web developer with over 2 years of experience creating digital
             products that people love to use. My journey started with a simple "Hello World" and evolved into building
@@ -173,15 +175,15 @@
 
   <section class="skillsAndTechnologies" id="skillsAndTechnologies">
     <div class="container">
-      <div class="top-part" data-aos="fade-down"  data-aos-duration="700">
+      <div class="top-part" data-aos="fade-down" data-aos-duration="700">
         <span class="chapter">CHAPTER 02 — EXPERTISE</span>
         <h2 class="heading">Skills & Technologies</h2>
       </div>
 
       <div class="SAT-left-right row">
         <div class="left col-xs-12 col-lg-6">
-          <div data-aos="fade-right"  data-aos-duration="700">
-          <span class="top-name">Technical Stack</span>
+          <div data-aos="fade-right" data-aos-duration="700">
+            <span class="top-name">Technical Stack</span>
           </div>
 
           <div class="SAT-stats" data-aos="fade-right" data-aos-duration="700">
@@ -274,7 +276,7 @@
   <section class="projects" id="projects">
     <div class="container">
       <div data-aos="fade-down" data-aos-duration="700">
-      <span class="chapter">CHAPTER 03 — SELECTED WORK</span>
+        <span class="chapter">CHAPTER 03 — SELECTED WORK</span>
       </div>
       <div class="top-part projects-top-part" data-aos="fade-down" data-aos-duration="700">
         <h2 class="heading">Featured Projects</h2>
@@ -468,26 +470,29 @@
     </div>
   </footer>
 
-  <!-- <div class="scroll-to-top" id="scrollTopBtn">
-    <a href="#header"><i class="fa-solid fa-arrow-up"></i></a>
-  </div>
+  <button id="scrollTopBtn">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
 
-  <script src="app.js"> 
 
-    let scrollTopBtn = document.getElementById('scrollTopBtn')
+  <script>
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
 
-    window.addEventListener('scroll', function () {
-      if (window.scrollY > 1050) {
-        scrollTopBtn.classList.add('visible')
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        scrollTopBtn.style.display = "block";
+      } else {
+        scrollTopBtn.style.display = "none";
       }
-      if (window.scrollY < 1050) {
-        scrollTopBtn.classList.remove('visible')
-      }
-    })
+    });
 
-
-  </script> -->
-  
+    scrollTopBtn.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   <script>AOS.init();</script>
