@@ -1077,3 +1077,9 @@ footer p {
     right: -.6rem;
   }
 }
+@media screen and (max-width: 1230px){
+    header{
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+}
