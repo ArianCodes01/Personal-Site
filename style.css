@@ -923,7 +923,8 @@ footer p {
   display: none;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
   transition: all 0.3s ease;
-  z-index: 1000;
+  z-index: 1000
+  ;
 }
 
 #scrollTopBtn:hover {
