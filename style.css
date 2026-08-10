@@ -499,11 +499,11 @@ a {
 }
 
 .progress-bar-container .one {
-  width: 98%;
+  width: 80%;
 }
 
 .progress-bar-container .two {
-  width: 83%;
+  width: 60%;
 }
 
 .progress-bar-container .three {
@@ -511,7 +511,19 @@ a {
 }
 
 .progress-bar-container .four {
-  width: 75%;
+  width: 45%;
+}
+
+.progress-bar-container .five {
+  width: 25%;
+}
+
+.progress-bar-container .six {
+  width: 80%;
+}
+
+.progress-bar-container .seven {
+  width: 45%;
 }
 
 .right-grid {
@@ -923,8 +935,7 @@ footer p {
   display: none;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
   transition: all 0.3s ease;
-  z-index: 1000
-  ;
+  z-index: 1000;
 }
 
 #scrollTopBtn:hover {
