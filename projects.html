@@ -46,22 +46,49 @@
       </div>
    </header>
 
-   <div class="top-area">
-      <div class="input-i">
-         <input class="search-input" type="text" placeholder="Search Projects...">
-         <i class="fa-solid fa-magnifying-glass searchBtn"></i>
-      </div>
-      <div class="filter-icon">
-         <div class="filter">
-            <i class="fa-solid fa-filter"></i>
+
+   <section class="projects-toolbar">
+      <div class="container">
+         <div class="projects-intro">
+            <div class="projects-heading">
+               <span class="eyebrow">MY PORTFOLIO</span>
+               <h1>Explore my <span>projects.</span></h1>
+               <p>Discover the websites I've designed and built, from creative concepts to interactive experiences.</p>
+            </div>
+            <div class="projects-count">
+               <span class="count-number">06</span>
+               <span class="count-label">Projects<br>showcased</span>
+            </div>
          </div>
-         <select>
-            <option selected>Filter</option>
-            <option>Restaurant</option>
-            <option>Travel</option>
-         </select>
+
+         <div class="projects-controls">
+            <div class="search-box">
+               <i class="fa-solid fa-magnifying-glass"></i>
+               <input class="search-input" id="projectSearch" type="text"
+                  placeholder="Search projects by name, category, or technology...">
+               <span class="search-shortcut">⌕</span>
+            </div>
+
+            <div class="filter-box">
+               <i class="fa-solid fa-sliders"></i>
+               <select id="projectFilter">
+                  <option value="all">All projects</option>
+                  <option value="restaurant">Restaurant</option>
+                  <option value="travel">Travel</option>
+                  <option value="hotel">Hotel</option>
+                  <option value="gaming">Gaming</option>
+               </select>
+               <i class="fa-solid fa-chevron-down filter-chevron"></i>
+            </div>
+         </div>
+
+         <div class="projects-meta">
+            <span><i class="fa-solid fa-layer-group"></i> Featured work</span>
+            <span class="projects-meta-right">Browse my collection <i class="fa-solid fa-arrow-down"></i></span>
+         </div>
       </div>
-   </div>
+   </section>
+
 
    <section class="projects" id="projects">
       <div class="container">
@@ -181,10 +208,34 @@
                </div>
             </div>
 
+            <div class="col-xs-12 col-md-6 col-lg-4">
+               <div class="project-item">
+                  <div class="top-image">
+                     <a href="https://ariancodes01.github.io/The-Quest-Project/" target="_blank"><img
+                           src="./images/theQuestImg.avif" alt="the-quest-img"></a>
+                     <div class="tag">Gaming</div>
+                  </div>
+                  <div class="bottom-content">
+                     <a href="https://ariancodes01.github.io/The-Quest-Project/" target="_blank">
+                        <h3 class="project-name">The Quest</h3>
+                     </a>
+                     <p class="desc">Relax, explore, and conquer epic challenges in The Quest, where thrilling
+                        adventures and endless possibilities await every gamer.</p>
+
+                     <div class="project-tech">
+                        <div class="tech-item">HTML</div>
+                        <div class="tech-item">CSS</div>
+                        <div class="tech-item">JavaScript</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
          </div>
 
       </div>
    </section>
+
+   <script src="projects.js"></script>
 </body>
 
 </html>
