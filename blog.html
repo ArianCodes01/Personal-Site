@@ -2,110 +2,159 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Blog — Arian Mortazavi</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="blog.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Blog — Arian Mortazavi</title>
+   <link rel="stylesheet" href="common.css">
+   <link rel="stylesheet" href="blog.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 
 <body>
-
-    <header>
-        <div class="nav">
-            <a href="index.html" class="logo"><b>AM</b> Arian Mortazavi</a>
-            <nav class="links" aria-label="Main">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="index.html#skills">Skills</a>
-                <a href="index.html#work">Work</a>
-                <a href="blog.html" class="on" aria-current="page">Blog</a>
-                <a href="index.html#contact">Contact</a>
-            </nav>
-            <div class="social">
-                <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+   <header class="heading-font" id="header">
+      <div class="container">
+         <nav class="nav-bar">
+            <div class="logo">
+               <span class="logo-circle">AM</span>
+               <span class="logo-name">Arian Mortazavi</span>
             </div>
-        </div>
-    </header>
-
-    <main>
-        <div class="wrap">
-            <div class="top">
-                <div class="eyebrow">Chapter 04 — Thoughts</div>
-                <h1>Latest from the Blog</h1>
-                <p>Notes on design, performance and the tools I use to build for the web.</p>
+            <div class="menu">
+               <ul>
+                  <li>
+                     <a href="./index.html">Home</a>
+                  </li>
+                  <li>
+                     <a href="./about.html">About</a>
+                  </li>
+                  <li>
+                     <a href="./skills.html">Skills</a>
+                  </li>
+                  <li>
+                     <a href="./projects.html">Work</a>
+                  </li>
+                  <li>
+                     <a href="./blog.html">Blog</a>
+                  </li>
+                  <li>
+                     <a href="./contact.html">Contact</a>
+                  </li>
+               </ul>
             </div>
-
+            <div class="headers-socials">
+               <a href="https://www.youtube.com/@arian_kids_code" target="_blank">
+                  <i class="fa-brands fa-youtube">
+                  </i>
+               </a>
+               <a href="https://instagram.com/arian_kids_code" target="_blank">
+                  <i class="fa-brands fa-instagram">
+                  </i>
+               </a>
+               <a href="https://github.com/ArianCodes01" target="_blank">
+                  <i class="fa-brands fa-github">
+                  </i>
+               </a>
+            </div>
+            <i class="fa-solid fa-bars bars-icon" id="barsIcon">
+            </i>
+         </nav>
+      </div>
+   </header>
+   <aside class="sidebar" id="sidebar">
+      <button class="close-btn" id="closeBtn">
+         <i class="fa-solid fa-xmark">
+         </i>
+      </button>
+      <nav>
+         <a href="./index.html">
+            <i class="fa-solid fa-house">
+            </i> Home</a>
+         <a href="./about.html">
+            <i class="fa-solid fa-user">
+            </i> About</a>
+         <a href="./skills.html">
+            <i class="fa-solid fa-bolt">
+            </i> Skills</a>
+         <a href="./projects.html">
+            <i class="fa-solid fa-briefcase">
+            </i> Work</a>
+         <a href="./blog.html">
+            <i class="fa-solid fa-blog">
+            </i> Blog</a>
+         <a href="./contact.html">
+            <i class="fa-solid fa-envelope">
+            </i> Contact</a>
+      </nav>
+      <div class="socials">
+         <a href="https://www.youtube.com/@arian_kids_code" target="_blank">
+            <i class="fa-brands fa-youtube">
+            </i>
+         </a>
+         <a href="https://instagram.com/arian_kids_code" target="_blank">
+            <i class="fa-brands fa-instagram">
+            </i>
+         </a>
+         <a href="https://github.com/ArianCodes01" target="_blank">
+            <i class="fa-brands fa-github">
+            </i>
+         </a>
+      </div>
+   </aside>
+   <main>
+      <section class="bg-dark">
+         <div class="container">
+            <div class="top-part">
+               <span class="chapter">CHAPTER 04 — THOUGHTS</span>
+               <h1 class="heading">Latest from the Blog</h1>
+               <p class="top-desc">Notes on design, performance and the tools I use to build for the web.</p>
+            </div>
             <div class="tools">
-                <div class="chips" id="chips"></div>
-                <label class="search"><i class="fa-solid fa-magnifying-glass"></i><input id="q" type="search"
-                        placeholder="Search articles" aria-label="Search articles"></label>
+               <div class="chips" id="chips">
+               </div>
+               <label class="search">
+                  <i class="fa-solid fa-magnifying-glass">
+                  </i>
+                  <input class="input" id="q" type="search" placeholder="Search articles" aria-label="Search articles">
+               </label>
             </div>
-
-            <a href="#" class="feat" id="feat"></a>
-            <div class="grid" id="grid"></div>
+            <a href="#" class="feat" id="feat">
+            </a>
+            <div class="grid-3" id="grid">
+            </div>
             <p class="empty" id="empty">No articles match your search. Try another keyword or category.</p>
-        </div>
-
-        <section class="news">
-            <div class="wrap">
-                <h2>Get new articles by email</h2>
-                <p>One short email when I publish. No spam, unsubscribe anytime.</p>
-                <form class="nform" id="nform">
-                    <input type="email" id="em" placeholder="you@example.com" aria-label="Email address" required>
-                    <button type="submit">Subscribe</button>
-                </form>
-                <div class="ok" id="ok" role="status"></div>
+         </div>
+      </section>
+      <section class="bg-light">
+         <div class="container">
+            <div class="top-part cta-top">
+               <h2 class="heading">Get new articles by email</h2>
+               <p class="top-desc">One short email when I publish. No spam, unsubscribe anytime.</p>
             </div>
-        </section>
-    </main>
-
-    <footer>© 2026 Arian Mortazavi. Crafted with passion and lots of <i class="fa-solid fa-mug-hot"></i></footer>
-    <button class="top-btn" id="topBtn" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
-
-    <script>
-        const posts = [
-            { t: "Building a Design System from Scratch in 2026", tag: "Design", d: "June 2, 2026", m: 8, x: "Lessons learned while creating a scalable component library used by 12 product teams." },
-            { t: "The State of Web Performance in 2026", tag: "Performance", d: "May 18, 2026", m: 6, x: "An analysis of real-world Core Web Vitals data across 500+ production websites." },
-            { t: "Why I Switched to Cursor.sh", tag: "Tools", d: "April 29, 2026", m: 5, x: "My experience moving from traditional IDEs to AI-powered development environments." },
-            { t: "Tailwind CSS Patterns I Reuse in Every Project", tag: "Tools", d: "March 24, 2026", m: 7, x: "The small utility combinations that keep my layouts consistent and my CSS tiny." },
-            { t: "Accessibility Is Not a Checklist", tag: "Design", d: "March 3, 2026", m: 6, x: "Why semantic HTML and keyboard testing catch more problems than any audit tool." },
-            { t: "What Freelancing Taught Me in Year One", tag: "Career", d: "February 11, 2026", m: 9, x: "Pricing, scoping and saying no: lessons I wish I had before my first client." },
-            { t: "Making Images Fast Without Losing Quality", tag: "Performance", d: "January 22, 2026", m: 5, x: "Modern formats, lazy loading and sizing tricks that cut load time in half." },
-            { t: "Learning React After Years of Plain JavaScript", tag: "Career", d: "December 15, 2025", m: 7, x: "What clicked, what didn't, and how I'm structuring my first component library." },
-            { t: "My Git Workflow for Solo Projects", tag: "Tools", d: "November 30, 2025", m: 4, x: "Branching, commit messages and small habits that keep a one-person repo clean." },
-            { t: "Designing Dark Interfaces That Stay Readable", tag: "Design", d: "October 19, 2025", m: 6, x: "Contrast, elevation and accent choices behind this very site." }
-        ];
-        const cats = ["All", ...new Set(posts.map(p => p.tag))];
-        let cat = "All", query = "";
-        const $ = id => document.getElementById(id);
-        const meta = p => `<div class="meta">${p.d}<span>${p.m} min read</span></div>`;
-        const more = '<span class="more">Read article <i class="fa-solid fa-arrow-right"></i></span>';
-
-        function render() {
-            const hit = posts.filter(p => (cat === "All" || p.tag === cat) && (p.t + p.x + p.tag).toLowerCase().includes(query));
-            const showFeat = cat === "All" && !query;
-            const f = posts[0];
-            $("feat").style.display = showFeat ? "grid" : "none";
-            $("feat").innerHTML = `<div class="art"><i class="fa-solid fa-layer-group"></i></div><div class="body">${meta(f)}<h2>${f.t}</h2><p>${f.x}</p>${more}</div>`;
-            const list = showFeat ? hit.slice(1) : hit;
-            $("grid").innerHTML = list.map(p => `<a href="#" class="post">${meta(p)}<h3>${p.t}</h3><p>${p.x}</p>${more}</a>`).join("");
-            $("empty").style.display = hit.length ? "none" : "block";
-            $("chips").innerHTML = cats.map(c => `<button class="chip${c === cat ? " on" : ""}" data-c="${c}">${c}</button>`).join("");
-        }
-        $("chips").addEventListener("click", e => { const b = e.target.closest("[data-c]"); if (b) { cat = b.dataset.c; render() } });
-        $("q").addEventListener("input", e => { query = e.target.value.trim().toLowerCase(); render() });
-        $("nform").addEventListener("submit", e => { e.preventDefault(); $("ok").textContent = "Thanks! You're on the list."; $("em").value = "" });
-        const tb = $("topBtn");
-        addEventListener("scroll", () => tb.classList.toggle("show", scrollY > 300), { passive: true });
-        tb.addEventListener("click", () => scrollTo({ top: 0, behavior: "smooth" }));
-        render();
-    </script>
+            <form class="nform" id="nform">
+               <input class="input" type="email" id="em" placeholder="you@example.com" aria-label="Email address"
+                  required>
+               <button class="send-btn" type="submit">Subscribe</button>
+            </form>
+            <div class="ok" id="ok" role="status">
+            </div>
+         </div>
+      </section>
+   </main>
+   <footer class="footer" id="footer">
+      <div class="container">
+         <p>© 2026 Arian Mortazavi. Crafted with passion and lots of ☕</p>
+      </div>
+   </footer>
+   <button id="scrollTopBtn">
+      <i class="fa-solid fa-arrow-up">
+      </i>
+   </button>
+   <script src="app.js">
+   </script>
+   <script>const posts = [{ t: "Building a Design System from Scratch in 2026", tag: "Design", d: "June 2, 2026", m: 8, x: "Lessons learned while creating a scalable component library used by 12 product teams." }, { t: "The State of Web Performance in 2026", tag: "Performance", d: "May 18, 2026", m: 6, x: "An analysis of real-world Core Web Vitals data across 500+ production websites." }, { t: "Why I Switched to Cursor.sh", tag: "Tools", d: "April 29, 2026", m: 5, x: "My experience moving from traditional IDEs to AI-powered development environments." }, { t: "Tailwind CSS Patterns I Reuse in Every Project", tag: "Tools", d: "March 24, 2026", m: 7, x: "The small utility combinations that keep my layouts consistent and my CSS tiny." }, { t: "Accessibility Is Not a Checklist", tag: "Design", d: "March 3, 2026", m: 6, x: "Why semantic HTML and keyboard testing catch more problems than any audit tool." }, { t: "What Freelancing Taught Me in Year One", tag: "Career", d: "February 11, 2026", m: 9, x: "Pricing, scoping and saying no: lessons I wish I had before my first client." }, { t: "Making Images Fast Without Losing Quality", tag: "Performance", d: "January 22, 2026", m: 5, x: "Modern formats, lazy loading and sizing tricks that cut load time in half." }, { t: "Learning React After Years of Plain JavaScript", tag: "Career", d: "December 15, 2025", m: 7, x: "What clicked, what didn't, and how I'm structuring my first component library." }, { t: "My Git Workflow for Solo Projects", tag: "Tools", d: "November 30, 2025", m: 4, x: "Branching, commit messages and small habits that keep a one-person repo clean." }, { t: "Designing Dark Interfaces That Stay Readable", tag: "Design", d: "October 19, 2025", m: 6, x: "Contrast, elevation and accent choices behind this very site." }];
+      const cats = ["All", ...new Set(posts.map(p => p.tag))]; let cat = "All", query = ""; const $ = id => document.getElementById(id);
+      const meta = p => `<div class="meta">${p.d}<span>${p.m} min read</span></div>`; const more = '<span class="more">Read article <i class="fa-solid fa-arrow-right"></i></span>';
+      function render() { const hit = posts.filter(p => (cat === "All" || p.tag === cat) && (p.t + p.x + p.tag).toLowerCase().includes(query)); const showFeat = cat === "All" && !query; const f = posts[0]; $("feat").style.display = showFeat ? "grid" : "none"; $("feat").innerHTML = `<div class="art"><i class="fa-solid fa-layer-group"></i></div><div class="body">${meta(f)}<h2>${f.t}</h2><p>${f.x}</p>${more}</div>`; const list = showFeat ? hit.slice(1) : hit; $("grid").innerHTML = list.map(p => `<a href="#" class="post">${meta(p)}<h3>${p.t}</h3><p>${p.x}</p>${more}</a>`).join(""); $("empty").style.display = hit.length ? "none" : "block"; $("chips").innerHTML = cats.map(c => `<button class="chip${c === cat ? " on" : ""}" data-c="${c}">${c}</button>`).join("") }
+      $("chips").addEventListener("click", e => { const b = e.target.closest("[data-c]"); if (b) { cat = b.dataset.c; render() } }); $("q").addEventListener("input", e => { query = e.target.value.trim().toLowerCase(); render() }); $("nform").addEventListener("submit", e => { e.preventDefault(); $("ok").textContent = "Thanks! You're on the list."; $("em").value = "" }); render();</script>
 </body>
 
 </html>
